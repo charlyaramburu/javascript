@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anamnesis">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <title>Anamnesis</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Esculap.io</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Nueva Consulta</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div id="texto">
+            <h5>Bien, ahora veamos tus síntomas.</h5><br />
+            <p id="bienvenida"></p>
+            <h6>¿List@? Responde a continuación:</h6>
+        </div>
+        <div id="formulario">
+            <form class="row g-2" id="anamnesisForm">
+                <div class="col-md-12">
+                    <label for="dolor" class="form-label">
+                        ¿Te duele la garganta?
+                    </label>
+                    <select id="dolor">
+                        <option value="">Selecciona</option>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="col-md-12" id="fiebreContainer" style="display: none;">
+                    <label for="fiebre" class="form-label">
+                        ¿Tienes fiebre? Esto es temperatura de 38.3ºC o más tomada como se indica <a
+                            href="https://youtu.be/-3ffK4lb9kk?t=210" target="_blank">aqui.</a>
+                    </label>
+                    <select id="fiebre">
+                        <option value="">Selecciona</option>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="col-md-12" id="adenopatiasContainer" style="display: none;">
+                    <label for="adenopatias" class="form-label">
+                        Palpa tu cuello como se muestra <a href="https://youtu.be/RLQgoRjI5fc?t=165"
+                            target="_blank">aquí.</a>¿Palpaste alguna bolita (ganglio) dolorosa?
+                    </label>
+                    <select id="adenopatias">
+                        <option value="">Selecciona</option>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="col-md-12" id="exudadoContainer" style="display: none;">
+                    <label for="exudado" class="form-label">
+                        ¿Presentas pus en la garganta? Así es como se puede observar:
+                        <img src="../img/exudado.jpeg" alt="Exudado" id="imgExudado">
+                    </label>
+                    <select id="exudado">
+                        <option value="">Selecciona</option>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="col-md-12" id="tosContainer" style="display: none;">
+                    <label for="tos" class="form-label">
+                        ¿Tienes tos?
+                    </label>
+                    <select id="tos">
+                        <option value="">Selecciona</option>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="col-12" id="continuarContainer" style="display: none; padding-top: 5px;">
+                    <label for="continuarContainer" class="form-label">
+                        Da clic en continuar para ir a tu diagnóstico y tratamiento.
+                    </label>
+                    <button type="submit" class="btn btn-primary">Continuar</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Mensaje</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Message content will be inserted here -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../js/anamnesis.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

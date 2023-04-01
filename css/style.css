@@ -1,0 +1,65 @@
+.navbar {
+    background: #28a8e0 !important;
+}
+
+.navbar .nav-link {
+    color: #fff !important;
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+.container-fluid {
+    max-width: 375px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: fff;
+}
+
+#texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding: 15px 50px;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 50px;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+#Tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 15px 15px 15px;
+}
+
+#datos-usuario {
+    display: flex;
+    flex-direction: column;
+    border: 15px;
+}
+
+.btn-primary {
+    background-color: #28a8e0 !important;
+    border-color: #28a8e0 !important;
+
+}
+
+#imgExudado {
+    max-width: 250px;
+    padding: 15px;
+}

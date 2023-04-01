@@ -1,0 +1,17 @@
+[
+    {
+        "id":1,
+        "diagnosis": "no bacteriana (baja probabilidad de faringitis estreptocócica)",
+        "treatment": "Manejo sintomático con Ibuprofeno 400 mg. c. 6 hrs VO sin exceder 1200 mg en 24 hrs. Hidratación abudante con líquidos (no refrescos o jugos)."
+    },
+    {
+        "id":2,
+        "diagnosis": "indeterminada (probabilidad moderada de faringitis estreptocócica)",
+        "treatment": "Manejo sintomático con Ibuprofeno 400 mg. c. 6 hrs VO sin exceder 1200 mg en 24 hrs. Hidratación abudante con líquidos (no refrescos o jugos). Realizar prueba rápida de antígenos SBH o exudado faríngeo. Si la prueba es positiva, añadir al tratamiento amoxicilina más ácido clavulánico 500 mg. VO por 10 días."
+    },
+    {
+        "id":3,
+        "diagnosis": "bacteriana (alta probabilidad de faringitis estreptocócica)",
+        "treatment": "Manejo sintomático con paracetamol 500 mg. c. 8 hrs + amoxicilina más ácido clavulánico 500 mg. VO por 10 días."
+    }
+]
